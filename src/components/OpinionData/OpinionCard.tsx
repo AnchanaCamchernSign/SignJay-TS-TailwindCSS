@@ -11,21 +11,34 @@ interface OpinionCardProps {
 
 const OpinionCard: React.FC<OpinionCardProps> = ({ opinion }) => {
   return (
-    <Card sx={{ minWidth: 20 }}>
+    <Card sx={{ minWidth: 20 }} className="flex flex-col">
       <CardContent className="w-xs">
-        <Typography gutterBottom className="text-left" sx={{ color: "text.secondary", fontSize: 14 }}>
-         <span style={{ fontWeight: 'bold' }}>Email:</span>: {opinion.email}
+        <Typography
+          gutterBottom
+          className="text-left"
+          sx={{ color: "text.secondary", fontSize: 14 }}
+        >
+          <span style={{ fontWeight: "bold" }}>Email:</span>: {opinion.email}
         </Typography>
-        <Typography className="text-left font-mono text-xs text-gray-500"  component="div">
-          <span style={{ fontWeight: 'bold', color: "gray"}}>Name:</span> {opinion.name}
+        <Typography
+          className="text-left font-mono text-xs text-gray-500"
+          component="div"
+        >
+          <span style={{ fontWeight: "bold", color: "gray" }}>Name:</span>{" "}
+          {opinion.name}
         </Typography>
-        <Typography className="text-left" sx={{ color: "text.secondary", mb: 1.5 } }>
-          <span style={{ fontWeight: 'bold' }}>Message:</span> {opinion.body}
+        <Typography
+          className="text-left"
+          sx={{ color: "text.secondary", mb: 1.5 }}
+        >
+          <span style={{ fontWeight: "bold" }}>Message:</span> {opinion.body}
         </Typography>
-        <Typography variant="body2" className="text-left">ID: {opinion.id}</Typography>
+        <Typography variant="body2" className="text-left">
+          ID: {opinion.id}
+        </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small" className="pb-4 bg-blue-300">Learn More</Button>
+      <CardActions className="pb-4">
+        <button className="px-4 py-2 ml-4 mb-4 rounded bg-blue-200 text-white hover:bg-blue-400">Learn More</button>
       </CardActions>
     </Card>
   );
