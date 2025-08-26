@@ -12,7 +12,7 @@ function HomePage() {
   return (
     <div>
       <Hamburger onClick={handleHamburgerClick} />
-      <BannerHompage />
+      <BannerHompage text="Hey buddy, this big world is waiting for you"/>
       <GetStartButton />
       <ExampleContents />
       <OpinionList />

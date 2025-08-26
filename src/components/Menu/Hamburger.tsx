@@ -45,7 +45,7 @@ export function Hamburger(props: HamburgerProps) {
             className="blurred"
             onClick={() => setIsOpen(false)} 
           />
-          <div className="absolute left-8 mt-2 mb-120 bg-white shadow-lg rounded p-4 w-lg min-h-full z-50">
+          <nav className="absolute left-8 mt-2 mb-120 bg-white shadow-lg rounded p-4 w-lg min-h-full z-50">
             <ul className="flex flex-col gap-2">
               <li className="menu-item pt-12">
                 <a href="/" className="menu-link">
@@ -63,12 +63,12 @@ export function Hamburger(props: HamburgerProps) {
                 </a>
               </li>
               <li className="menu-item">
-                <a href="/contact" className="menu-link">
+                <a href="/details" className="menu-link">
                   Docs
                 </a>
               </li>
             </ul>
-          </div>
+          </nav>
         </>
       )}
     </div>
