@@ -63,8 +63,8 @@ export function Hamburger(props: HamburgerProps) {
                 </a>
               </li>
               <li className="menu-item">
-                <a href="/details" className="menu-link">
-                  Docs
+                <a href="/countries" className="menu-link">
+                  Countries
                 </a>
               </li>
             </ul>

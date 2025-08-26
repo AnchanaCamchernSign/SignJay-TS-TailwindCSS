@@ -1,4 +1,4 @@
-import GetStartButton from "../../components/Buttons/GetStartButton";
+import GetStartButton from "../../components/Buttons/PrimaryButton";
 import BannerHompage from "../../components/Header/BannerHomePage";
 import ExampleContents from "../../components/Header/ExampleContents";
 import { Hamburger } from "../../components/Menu/Hamburger";
@@ -13,8 +13,8 @@ function HomePage() {
     <div>
       <Hamburger onClick={handleHamburgerClick} />
       <BannerHompage text="Hey buddy, this big world is waiting for you"/>
-      <GetStartButton />
-      <ExampleContents />
+      <GetStartButton text="Get Start"/>
+      <ExampleContents message="Example Of Contents"/>
       <OpinionList />
     </div>
   );

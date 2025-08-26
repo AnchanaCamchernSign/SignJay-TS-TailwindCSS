@@ -10,13 +10,12 @@ const CountryCard: React.FC<CountryCardProps> = ({ country }) => (
     <img
       src={country.flags.png}
       alt={country.name.common}
-      className="w-full h-48 object-cover"
+      className="w-full h-48 p-2 border-1 border-gray-300 shadow-sm"
     />
     <div className="p-4">
       <h2 className="text-xl font-semibold">{country.name.common}</h2>
-      <p className="text-gray-600">Region: {country.region}</p>
-      <p className="text-gray-500">Population: {country.population.toLocaleString()}</p>
-      {country.capital && <p className="text-gray-500">Capital: {country.capital[0]}</p>}
+      <p className="text-gray-600"> Region: {country.region}</p>
+      {country.capital && <p className="text-gray-600">Capital : {country.capital[0]}</p>}
     </div>
   </div>
 );
