@@ -1,0 +1,22 @@
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Tailwind's gap-2 is 0.5rem */
+}
+
+.menu-item {
+  text-align: left;
+  margin-left: 3rem; /* Tailwind's ml-12 is 3rem */
+  font-size: 2.25rem; /* Tailwind's text-4xl is 2.25rem */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* Tailwind's font-mono */
+  font-weight: bold;
+}
+
+.menu-link {
+  color: #4B5563; /* Tailwind's text-gray-600 */
+  transition: text-decoration 0.2s;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
