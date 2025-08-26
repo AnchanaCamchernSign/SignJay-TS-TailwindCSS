@@ -39,30 +39,37 @@ export function Hamburger(props: HamburgerProps) {
       </button>
 
       {isOpen && (
-        <div className="absolute left-8 mt-2 mb-120 bg-white shadow-lg rounded p-4 w-lg min-h-full z-50">
-          <ul className="flex flex-col gap-2">
-            <li className="menu-item pt-12">
-              <a href="/" className="menu-link">
-                Home
-              </a>
-            </li>
-            <li className="menu-item">
-              <a href="/about" className="menu-link">
-                About
-              </a>
-            </li>
-            <li className="menu-item">
-              <a href="/contact" className="menu-link">
-                Contact
-              </a>
-            </li>
-            <li className="menu-item">
-              <a href="/contact" className="menu-link">
-                Docs
-              </a>
-            </li>
-          </ul>
-        </div>
+        <>
+          {/* Blur + dark overlay */}
+          <div
+            className="blurred"
+            onClick={() => setIsOpen(false)} 
+          />
+          <div className="absolute left-8 mt-2 mb-120 bg-white shadow-lg rounded p-4 w-lg min-h-full z-50">
+            <ul className="flex flex-col gap-2">
+              <li className="menu-item pt-12">
+                <a href="/" className="menu-link">
+                  Home
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="/about" className="menu-link">
+                  About
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="/contact" className="menu-link">
+                  Contact
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="/contact" className="menu-link">
+                  Docs
+                </a>
+              </li>
+            </ul>
+          </div>
+        </>
       )}
     </div>
   );
